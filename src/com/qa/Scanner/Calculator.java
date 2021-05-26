@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Calculator {
 
 	public static Scanner scanner = new Scanner(System.in);
+	private static String num1;
 	
 	//@SuppressWarnings("resource")
 	public static void main(String[] args ) {
@@ -20,9 +21,9 @@ public class Calculator {
 			//enter integer as well as floating point value. 
 		
 		
-		double int1 = scanner.nextDouble();
+		double int11 = scanner.nextDouble();
 		System.out.println("Enter second number:");
-		 double int2 = scanner.nextDouble();
+		 double int21 = scanner.nextDouble();
 		
 		
 		System.out.println("Enter an operator (+, -, *, /): ");
@@ -62,7 +63,10 @@ public class Calculator {
 		
 	}
 			
-		System.out.println(num1+" "operator+" "+operator1+ +"+num2": "+output");
+		String operator;
+		String nulloperator;
+		String nulloperator1;
+		System.out.println(num1+" " != nulloperator+" "+nulloperator1+ +"+num2": "+output");
 			
 	}
 	
