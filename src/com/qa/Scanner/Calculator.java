@@ -63,7 +63,28 @@ public class Calculator {
 		
 	}
 
-	
+	public static class Calculator2 {
+		
+		public static void main(String[] args) {
+		
+			getInput("Enter a Number value");
+				getInput("Enter a number value");
+				
+				getInput("Enter a number value");
+					getInput("Enter a number value");
+					
+					getInt
+			
+		}
+
+		private static String getInput(String string) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		
+		//}
+	}
 }
 
 
