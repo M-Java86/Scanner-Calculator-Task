@@ -1,85 +1,70 @@
 package com.qa.Scanner;
 
-
 import java.util.Scanner;
 
 public class Calculator {
-
-	public static Scanner scanner = new Scanner(System.in);
-	private static String num1;
 	
-	//@SuppressWarnings("resource")
+	public static Scanner scanner = new Scanner(System.in);
 	public static void main(String[] args ) {
+		start();
+		
+		closeScanner();
+		
+		System.out.println("Enter a Number value: ");
+		String input1 = scanner.nextLine();
+		System.out.println("Enter a Number value: ");
+		String input2 = scanner.nextLine();
+		
+		Double.parseDouble(input1);
+		Double.parseDouble(input2);
+		
+		System.out.print("Choose an Operation (+ - * /): ");
+		String input3 = scanner.nextLine();
 		
 		
+		int double1 = 0;
+		int double2 = 0;
+		double resultAdd = double1 + double2;
+		double resultSub = double1 - double2;
+		double resultMul = double1 * double2;
+		double resultDiv = double1 / double2;
 		
-		
-		double int1, int2;
-			System.out.println("Enter first number:");
+		switch(input3) {
+		case "+":
+			System.out.println("The numeric value is " + resultAdd);
+			break;
 			
-			//using data type double so that user can 
-			//enter integer as well as floating point value. 
-		
-		
-		double int11 = scanner.nextDouble();
-		System.out.println("Enter second number:");
-		 double int21 = scanner.nextDouble();
-		
-		
-		System.out.println("Enter an operator (+, -, *, /): ");
-		char operator1 = scanner.nextLine().charAt(0);
-		
-		scanner.close();
-		double output;
-		
-		
-		
-			switch(operator1)
-			{
+		case "-":
+			System.out.println("The numeric value is" + resultSub);
+			break;
 			
-			case '+':
-		
-				 output = operator1 +  operator1;
-				break;
-		
-		
-			case '-':
-				 output = operator1 - operator1;
-				break;
-				
-			 
-			case  '*':
-				 output = operator1 * operator1;
-				 
+		case "*":
+			System.out.println("The numeric value is" + resultMul);
 			
-			case '/':
-				output = operator1 / operator1;
-				break;
-				
-			dafault:
-				System.out.println("You have entered the wrong operator");
-			
-		
+		case " /":
+			System.out.print("The numeric value is"  + resultDiv);
+			break;
+		}
 		
 	}
-			
-		String operator;
-		String nulloperator;
-		String nulloperator1;
-		System.out.println(num1+" " != nulloperator+" "+nulloperator1+ +"+num2": "+output");
-			
+
+	private static void start() {
+		// TODO Auto-generated method stub
+		
 	}
+
+	//private static void close() {
+		// TODO Auto-generated method stub
+		
+	//}
+
+	private static void closeScanner() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 }
-			
-	
-
-	
-		
-		
-
-
-		
 
 
 
